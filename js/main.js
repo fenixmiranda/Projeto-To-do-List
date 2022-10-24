@@ -60,6 +60,13 @@ const Main = {
   
           this.cacheSelectors()
           this.bindEvents()
+
+          const obj = [{
+            task: value
+          }]
+
+          localStorage.setItem('tasks', JSON.stringify(obj))
+          
         }
       },
   
